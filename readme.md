@@ -1,4 +1,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/tqgc2tvh6lh7jaq0?svg=true)](https://ci.appveyor.com/project/blep/blp-no-debug-dlg)
+[![Build Status](https://travis-ci.org/blep/blp_no_debug_dlg.svg?branch=master)](https://travis-ci.org/blep/blp_no_debug_dlg)
 
 Disable Windows/Visual Studio debug dialog.
 
