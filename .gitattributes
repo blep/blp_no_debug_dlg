@@ -1,0 +1,23 @@
+* 			text=auto
+*.java		text eol=lf
+*.txt		text eol=native
+*.md		text eol=native
+*.json		text
+*.csv		text
+*.vcproj	eol=crlf
+*.sln	eol=crlf
+*.bat		eol=crlf
+*.sh		eol=lf
+*.py		eol=lf
+*.c		eol=lf
+*.h		eol=lf
+*.cpp		eol=lf
+*.cc		eol=lf
+*.cxx		eol=lf
+*.c++		eol=lf
+*.h		eol=lf
+*.mm		text eol=native
+*.sx		eol=lf
+*.expected		eol=lf
+*.hpp		-text
+*.png		-text
