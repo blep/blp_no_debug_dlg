@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/tqgc2tvh6lh7jaq0?svg=true)](https://ci.appveyor.com/project/blep/blp-no-debug-dlg)
+
 Disable Windows/Visual Studio debug dialog.
 
 Typical Usage: just call `blp_no_debug_dlg_unless_debugging()` in the `main()` of your test executable.
