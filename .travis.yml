@@ -1,0 +1,21 @@
+# Build matrix / environment variable are explained on:
+# http://about.travis-ci.org/docs/user/build-configuration/
+# This file can be validated on:
+# http://lint.travis-ci.org/
+# New APT install:
+# http://docs.travis-ci.com/user/migrating-from-legacy/?utm_source=legacy-notice&utm_medium=banner&utm_campaign=legacy-upgrade
+addons:
+  apt:
+    packages:
+    - cmake
+language: cpp
+compiler:
+  - gcc
+  - clang
+script: cmake --version && cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_VERBOSE_MAKEFILE=$VERBOSE_MAKE . && make -k all
+env:
+  global:
+    - CPP_FEATURES_CONTINUOUS_INTERATION=1
+    - CTEST_OUTPUT_ON_FAILURE=1
+  matrix:
+- BUILD_TYPE=debug VERBOSE VERBOSE_MAKE=true
